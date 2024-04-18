@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wrongAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/wrongans"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/wrongans" />
+
+    <TextView
+        android:id="@+id/textViewcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score "
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Text"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/playAgainButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/play_again"
+        android:textStyle="bold"
+        fbutton:buttonColor="@color/lightGreen" />
+    <info.hoang8f.widget.FButton
+        android:id="@+id/exit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="exit"
+        android:textStyle="bold"
+        fbutton:buttonColor="@color/lightGreen" />
+</LinearLayout>
